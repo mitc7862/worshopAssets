@@ -1,0 +1,4 @@
+<svg id="Robot" xmlns="http://www.w3.org/2000/svg" width="33" height="135" viewBox="0 0 33 135">
+  <title>robot-right-leg</title>
+  <path id="leg" d="M19.5,118.38013V0h-7V118.38013C5.5,119.98639,0,127,0,135H33A16.84309,16.84309,0,0,0,19.5,118.38013Z" fill="#4c4c4c" fill-rule="evenodd"/>
+</svg>
