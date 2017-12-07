@@ -1,12 +1,44 @@
 <svg id="Robot" xmlns="http://www.w3.org/2000/svg" width="108" height="150" viewBox="0 0 108 150">
-  <title>robot-body</title>
+  <defs>
+    <style>
+      .torso {
+        fill: #4c4c4c;
+      }
+      .circle {
+        fill: #fff;
+        animation: blink 2s linear infinite;
+      }
+      .square {
+        fill: #fff;
+        animation: blink 2s linear .5s infinite;
+      }
+      .triangle {
+        fill: #fff;
+        animation: blink 2s linear 1s infinite;
+      } 
+      .star {
+        fill: #fff;
+        animation: blink 2s linear 1.5s infinite;
+      }
+
+      @keyframes blink {
+        0% {fill: #e89071;}
+        25% {fill: #fff;}
+        50% {fill: #fff;}
+        100% {fill: #fff;}
+      }
+
+
+    </style>
+  </defs>
+  <title>robot</title>
   <g id="body">
-    <path id="torso" d="M54.33333,0h0a54,54,0,0,1,54,54v96h-108V54A54,54,0,0,1,54.33333,0Z" fill="#4c4c4c" fill-rule="evenodd"/>
+    <path id="torso" class="torso" d="M54.33333,0h0a54,54,0,0,1,54,54v96h-108V54A54,54,0,0,1,54.33333,0Z"/>
     <g id="buttons">
-      <polygon id="triangle" points="39.646 57 46.646 70 32.646 70 39.646 57" fill="#fff" fill-rule="evenodd"/>
-      <path id="circle" d="M39.64648,34.5a3,3,0,1,1-3,3,3.0034,3.0034,0,0,1,3-3m0-4a7,7,0,1,0,7,7,7,7,0,0,0-7-7Z" fill="#fff"/>
-      <polygon id="star" points="74.061 63 69.518 63 72.73 59.787 71.316 58.373 68.104 61.586 68.104 57.043 66.104 57.043 66.104 61.586 62.891 58.373 61.477 59.787 64.689 63 60.146 63 60.146 65 64.689 65 61.477 68.212 62.891 69.626 66.104 66.414 66.104 70.957 68.104 70.957 68.104 66.414 71.316 69.626 72.73 68.212 69.518 65 74.061 65 74.061 63" fill="#fff"/>
-      <rect id="square" x="61.02148" y="31.5" width="12" height="12" fill="#fff"/>
+      <polygon id="triangle" class="triangle" points="39.646 57 46.646 70 32.646 70 39.646 57"/>
+      <path id="circle" class="circle" d="M39.64648,34.5a3,3,0,1,1-3,3,3.0034,3.0034,0,0,1,3-3m0-4a7,7,0,1,0,7,7,7,7,0,0,0-7-7Z"/>
+      <polygon id="star" class="star" points="74.061 63 69.518 63 72.73 59.787 71.316 58.373 68.104 61.586 68.104 57.043 66.104 57.043 66.104 61.586 62.891 58.373 61.477 59.787 64.689 63 60.146 63 60.146 65 64.689 65 61.477 68.212 62.891 69.626 66.104 66.414 66.104 70.957 68.104 70.957 68.104 66.414 71.316 69.626 72.73 68.212 69.518 65 74.061 65 74.061 63"/>
+      <rect id="square" class="square" x="61.02148" y="31.5" width="12" height="12"/>
     </g>
   </g>
 </svg>
